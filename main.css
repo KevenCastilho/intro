@@ -1,0 +1,511 @@
+@font-face { font-family: "Minecraft Regular"; src: url("font/minecraft_font.eot?") format("eot"), url("font/minecraft_font.woff") format("woff"), url("font/minecraft_font.ttf") format("truetype"), url("font/minecraft_font.svg#Minecraft") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "MineCrafter 2.0 Regular"; src: url("font/minecrafter_20.eot?") format("eot"), url("font/minecrafter_20.woff") format("woff"), url("font/minecrafter_20.ttf") format("truetype"), url("font/minecrafter_20.svg#MineCrafter-2.0") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Blox2"; src: url("font/Blox2.eot?") format("eot"), url("font/Blox2.woff") format("woff"), url("font/Blox2.ttf") format("truetype");}
+@font-face { font-family: "goblin"; src: url("font/AGoblinAppears-o2aV.ttf") format("truetype");}
+@font-face { font-family: "Pretendo"; src: url("font/Pretendo.ttf") format("truetype");}
+<!--
+/* @group Blink */
+.blink {
+	-webkit-animation: blink .99s linear infinite;
+	-moz-animation: blink .99s linear infinite;
+	-ms-animation: blink .99s linear infinite;
+	-o-animation: blink .99s linear infinite;
+	 animation: blink .99s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+body {
+	background-image: url('images/bg.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100%;
+	background-color: #252525;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	
+}
+
+h1 {
+	margin:0px;
+	padding:0px;
+}
+
+canvas{ display: block; vertical-align: bottom; }
+
+div.main {
+	width:1150px;
+	height:300px;
+	position:relative;
+	left:0px;
+	top:0px;
+}
+
+div.DDT {
+		background-color: #691818;;
+		background-image: url('images/ddtbg.png');
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+	    display: inline-block;
+		height:270px;
+		width:270px;
+		float:left;
+		position:relative;
+		top:20px;
+		left:80px;
+		overflow: hidden;
+		border: 3px;
+		border-color: #b28949;
+		border-style: solid;
+		-webkit-box-shadow: 0 0 0 2px #000000;
+		box-shadow: 0 0 0 2px #000000;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		border-radius: 8px 8px 8px 8px;
+		color:#fffd9c;
+		font-family:cursive;
+}
+
+div.DDT:hover {
+		
+}
+
+div.DDT h1 { background-image: url('images/ddtlogo.png');background-position:center;background-repeat:no-repeat;background-size:100% 100%;width:230px;height:69px;margin-top:10px;margin-left:20px;padding:0px; }
+
+div.DDT .button {
+  height: 50px;
+  width: 180px;
+  position: relative;
+  top:-15px;
+  left:45px;
+  margin-top: 0;
+  display: inline-block;
+  background-image: url('images/ddtbtn.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0;
+  text-align: center;
+  color: #fffd9c;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+div.DDT .button span {
+  position: relative;
+  line-height: 40px;
+  top: 3px;
+}
+
+div.DDT a{color:fffd9c;text-decoration:none;font-family:cursive;}
+div.DDT a:hover{text-shadow: 0 0 4px #feffe0;}
+
+div.DDT .button:hover {
+  background-image: url('images/ddtbtnon.png');
+}
+
+div.Jam {
+		background-color: #f6f6f6;;
+	    display: inline-block;
+		height:270px;
+		width:270px;
+		float:left;
+		position:relative;
+		top:20px;
+		left:120px;
+		overflow: hidden;
+		border:1;
+		border-color:#B012B0;
+		-webkit-box-shadow:inset 0 -4px 0 0 #B012B0;
+		box-shadow:inset 0 -4px 0 0 #B012B0;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		border-radius: 8px 8px 8px 8px;
+		font-family:monospace;
+		padding-left:10px;
+}
+
+div.Jam:hover {
+
+}
+
+div.Jam h1 { background-image: url('images/jamlogo.png');background-position:center;background-repeat:no-repeat;background-size:cover;width:225px;height:62px;margin-top:0px;margin-left:20px;padding:0px; }
+
+div.Jam a{ text-decoration:none;text-align:center;}
+
+div.Jam .btn {
+		position:relative;
+		left:0px;
+		top:-20px;
+		width:220px;
+		-webkit-border-radius: 28;
+		-moz-border-radius: 28;
+		border-radius: 28px;
+		font-family: Arial;
+		color: #ffffff;
+		font-size: 20px;
+		background: #192024;
+		padding: 10px 20px 10px 20px;
+		text-decoration: none;
+}
+
+div.Jam .btn:hover {
+		background: #B012B0;
+		text-decoration: none;
+}
+
+div.Jam dl {
+	position:relative;
+	top:-20px;
+}
+
+div.Mine {
+		background-image: url('images/book.png');
+	    display: inline-block;
+		height:270px;
+		width:270px;
+		float:left;
+		position:relative;
+		top:20px;
+		left:160px;
+		overflow: hidden;
+		font-family:Minecraft Regular;
+}
+
+div.Mine article{
+margin-left:35px;
+margin-top:20px;
+}
+
+div.Mine h1{background-image: url('images/minelogo.png');background-position:center;background-repeat:no-repeat;background-size:100% 100%;width:200px;height:100px;margin-top:-25px;margin-left:0px;padding:0px; }
+
+div.Mine:hover {
+
+}
+
+div.Mine .button {
+  height: 35px;
+  width: 180px;
+  outline: 2px solid black;
+  position: relative;
+  top:20px;
+  left:10px;
+  margin-top: 0;
+  display: inline-block;
+  background-image: url('images/button_center.png');
+  background-repeat: repeat;
+  padding: 0;
+  font-family: Minecraft Regular;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px #4C4C4C;
+  border-bottom: 4px solid #565656;
+  border-right: 2px solid #565656;
+  border-left: 2px solid #AAA;
+  border-top: 2px solid #AAA;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+div.Mine .button span {
+  position: relative;
+  line-height: 40px;
+  bottom: 7px;
+}
+
+div.Mine .button:hover {
+  border-bottom: 4px solid #59639A;
+  border-right: 2px solid #59639A;
+  border-left: 2px solid #BDC6FF;
+  border-top: 2px solid #BDC6FF;
+  background-image: url('images/button_active_center.png');
+  color: #FFFFA0;
+}
+
+div.Ragnarok {
+		background-color: #FFFFFF;
+	    display: inline-block;
+		height:270px;
+		width:270px;
+		float:left;
+		position:relative;
+		top:20px;
+		left:200px;
+		overflow: hidden;
+		border: 1px solid #c3c3c3;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border-top: none;
+		color: #526384;
+		text-shadow: 1px 1px #C6C6C6;
+		font-weight: bold;
+		text-align: right;
+		font-family: Helvetica, Sans-Serif;
+		font-size: 12px;
+}
+
+div.Ragnarok:hover {
+
+}
+
+#menu h1{
+    text-align: center;
+    background: url(images/title_bar.gif) repeat-x;
+    font-size: 13px;
+    height: 17px;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    font-weight: normal;
+    text-shadow: 1px 1px white;
+	padding:0px;
+	margin:0px;
+	text-shadow: 1px 1px white;
+}
+
+div.Ragnarok h2{background-image: url('images/ragnaroklogo.png');background-position:center;background-repeat:no-repeat;background-size:100% 100%;width:200px;height:50px;margin-top:5px;margin-left:35px;padding:0px; }
+
+
+.btnrag {
+    background: url(images/inactive_button.gif) no-repeat;
+	width: 9px;
+    height: 9px;
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    float: left;
+}
+
+span.lastupd{
+    display: block;
+    position: relative;
+	top:10px;
+    background: url(images/btn_1.gif) no-repeat;
+	background-size: 100% 100%;
+    width: 250px;
+    height: 20px;
+    color: black;
+    text-align: center;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+span.lastupd:hover {
+	background: url(images/btn_2.gif) no-repeat;
+	background-size: 100% 100%;
+}
+
+div.Ragnarok span.lastupd p{ padding-top:2px; }
+div.Ragnarok a{ text-decoration:none;}
+
+.bottom_bar {
+	position:relative;
+	top:14px;
+	width: 100%;
+    height: 18px;
+    margin-top: 10px;
+    background: url(images/top_win.gif);
+    border-top: 1px solid #c0c0c0;
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+}
+
+div.Ragnarok ul{
+	margin-left:-22px;
+}
+
+div.Ragnarok li{
+	text-align:initial;
+	margin-bottom:10px;
+}
+
+div.secondary {
+	width:1150px;
+	height:300px;
+	position:relative;
+	left:0px;
+	top:0px;
+}
+
+div.ki {
+		background-image: url('images/kibg.png');
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-color: #FFFFFF;
+	    display: inline-block;
+		height:270px;
+		width:280px;
+		float:left;
+		position:relative;
+		top:30px;
+		left:75px;
+		overflow: hidden;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border-top: none;
+		color: #FFFFFF;
+		font-weight: bold;
+		text-align: center;
+		font-family: monospace;
+		font-size: 16px;
+		border: inset 1px;
+		border-color: #8f00e8;
+		border-style: outset;
+		text-shadow: 1px 1px 1px #121212;
+}
+
+div.ki h1 { background-image: url('images/kilogo.gif');background-position:center;background-repeat:no-repeat;background-size:100% 100%;width:230px;height:50px;margin-top:10px;margin-left:20px;padding:0px; }
+
+div.ki .button{font-family:goblin;font-size:8px;text-decoration:none;margin-top:20px;}
+div.ki a{text-decoration:none;color:#FFF;}
+div.ki a:hover{color:#ffffa0;}
+
+div.emuladores {
+		background-image: url('images/smwbg.jpg');
+		background-position:bottom;
+		background-repeat:no-repeat;
+		background-size:300% 200%;
+		background-color: #FFFFFF;
+	    display: inline-block;
+		height:270px;
+		width:270px;
+		float:left;
+		position:relative;
+		top:30px;
+		left:120px;
+		overflow: hidden;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border-top: none;
+		color: #FFFFFF;
+		text-align: left;
+		font-family: cursive;
+		font-size: 14px;
+		border: inset 1px;
+		border-color: yellowgreen;
+		border-style: outset;
+}
+
+div.emuladores section {
+	text-align:center;
+	margin-right:10px;
+	margin-top:-20px;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #121212;
+}
+
+div.emuladores h1 { color:#FFFFFF;font-family: Blox2;text-shadow: -3px 2px 1px #000000;font-size:32px;width:230px;height:50px;margin-top:10px;margin-left:35px;padding:0px; }
+
+div.emuladores div.button { 
+-webkit-box-shadow: 0 0 0 5px #FFFFFF;
+box-shadow: 0 0 0 5px #FFFFFF;
+width:150px;height:25px;
+margin-top:15px;
+margin-left:60px;
+-webkit-border-radius: 20px 20px 20px 20px;
+border-radius: 20px 20px 20px 20px;
+font-family:Pretendo;
+font-size:14px;
+text-align:center;
+text-decoration:none;
+ }
+ 
+div.emuladores div.button span{ position:relative;top:5px; }
+div.emuladores a{ color:#FFF;text-decoration:none; }
+
+div.adarkroom {
+		background-color: #000000;
+	    display: inline-block;
+		height:270px;
+		width:270px;
+		float:left;
+		position:relative;
+		top:30px;
+		left:165px;
+		overflow: hidden;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border-top: none;
+		color: #FFF;
+		font-weight: bold;
+		text-align: justify;
+		font-family: Helvetica, Sans-Serif;
+		font-size: 12px;
+		border: inset 1px;
+		border-color: aliceblue;
+		border-style: outset;
+}
+
+div.adarkroom p{margin-left:35px;margin-right:35px;font-size:18px;}
+
+div.adarkroom h1 { background-image: url('images/adrlogo.jpg');background-position:center;background-repeat:no-repeat;background-size:100% 100%;width:230px;height:50px;margin-top:10px;margin-left:20px;padding:0px; }
+
+div.adarkroom div.button { border:1px;border-color:#FFF;text-decoration:underline;border-style: double;text-align:center;width:100px;height:25px;margin-left:80px;margin-top:80px;}
+div.adarkroom div.button span{ position:relative;top:5px; }
+div.adarkroom a{ text-decoration:underline;color:#FFF; }
+
+div.flash {
+		background-image: url('images/flashbg.png');
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-color: #FFFFFF;
+	    display: inline-block;
+		height:270px;
+		width:270px;
+		float:left;
+		position:relative;
+		top:30px;
+		left:205px;
+		overflow: hidden;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border-top: none;
+		color: #FFFFFF;
+		font-weight: bold;
+		text-align: center;
+		font-family: Helvetica, Sans-Serif;
+		font-size: 12px;
+}
+
+div.flash h1 { background-image: url('images/flashlogo.png');background-position:center;background-repeat:no-repeat;background-size:100% 100%;width:230px;height:130px;margin-top:0px;margin-left:55px;padding:0px; }
+div.flash div.button { margin-top:60px; }
+div.flash a{ color:#FFF;text-decoration:none; }
+div.flash a:hover{ text-decoration:underline; }
+
+div.footer { color:#FFF;margin-top:20px;text-align:center; }
